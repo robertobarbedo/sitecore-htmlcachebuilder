@@ -50,4 +50,4 @@ Will be applied at the end and will remove any entry previouly calculated or inf
 
 You can pass a raw URL or a Regex pattern to remove any URL that matches it.
 
-For instance you can remove the 404 page by using <pattern>^.*\/404$</pattern> or informing the URL <url>http://mysite/404</url>
+For instance you can remove the 404 page by using &lt;pattern&gt;^.*\/404$&lt;/pattern&gt; or informing the URL &lt;url&gt;http://mysite/404&lt;/url&gt;
