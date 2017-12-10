@@ -39,6 +39,14 @@ namespace Sitecore.Modules.HtmlCacheBuilder
 
         public string DefaultScheme { get; set; }
 
+        public void AddSite(System.Xml.XmlNode node)
+        {
+            var name = Sitecore.Xml.XmlUtil.GetAttribute("name", node);
+            var forceHost = Sitecore.Xml.XmlUtil.GetAttribute("forceHost", node);
+
+            this.Sites.Add(new SiteSettings(name, forceHost));
+        }
+
         public IEnumerable<string> GetUrls()
         {
             List<string> listURLs = new List<string>();
@@ -88,7 +96,7 @@ namespace Sitecore.Modules.HtmlCacheBuilder
 
                     List<string> listURLs = new List<string>();
                     BuildListURLs(siteSettings, site, home, 1, ref listURLs);
-                    
+
                     return listURLs;
                 }
             }

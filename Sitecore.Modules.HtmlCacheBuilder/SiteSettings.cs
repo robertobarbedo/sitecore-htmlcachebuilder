@@ -1,4 +1,8 @@
-﻿namespace Sitecore.Modules.HtmlCacheBuilder
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace Sitecore.Modules.HtmlCacheBuilder
 {
     public class SiteSettings
     {
