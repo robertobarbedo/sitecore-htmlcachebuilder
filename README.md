@@ -1,3 +1,8 @@
+
+
+Sitecore.Modules.HtmlCacheBuilder
+---------------------------------
+
 This module will allow you to trigger web requests to your Sitecore website in order to rebuild some of the HTML caches cleared by a publishing.
 
 The module is made of two pieces, a DLL and a include configuration file.
@@ -8,15 +13,17 @@ It contains a handler that can be hooked to the `publish:end` event, and `publis
 
 The handler is made of two parts.
 
-#Dispatcher#
+Dispatcher
+----------
 
 A class that will perform the web requests. It accepts one boolean parameter `AsyncRequest`. Specially when using the publish:end event, the async request will give a better user experience on publishing.
 
-#UrlCollectior#
+UrlCollectior
+-------------
 
 This class will return a list of URLs to be called.
 
-##Parameters##
+Parameters:
 
 **`Sites`**
 
